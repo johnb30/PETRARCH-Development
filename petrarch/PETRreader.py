@@ -1798,10 +1798,10 @@ def read_pipeline_input(pipeline_list):
     for entry in pipeline_list:
         entry_id = str(entry['_id'])
         meta_content = {'date': utilities._format_datestr(entry['date']),
-                        'date_added': entry['date_added'],
+                        #'date_added': entry['date_added'],
                         'source': entry['source'],
-                        'story_title': entry['title'],
-                        'url': entry['url']}
+                        'story_title': entry['title']}
+                        #'url': entry['url']}
         if 'parsed_sents' in entry:
             parsetrees = entry['parsed_sents']
         else:
