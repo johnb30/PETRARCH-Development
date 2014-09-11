@@ -1802,8 +1802,8 @@ def read_pipeline_input(pipeline_list):
                         'source': entry['source'],
                         'story_title': entry['title']}
                         #'url': entry['url']}
-        if 'parsed_sents' in entry:
-            parsetrees = entry['parsed_sents']
+        if 'parsed_sent' in entry:
+            parsetrees = entry['parsed_sent']
         else:
             parsetrees = ''
         if 'corefs' in entry:
